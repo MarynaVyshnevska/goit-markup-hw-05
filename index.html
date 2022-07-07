@@ -30,7 +30,7 @@
                 
                     <ul class="menu-nav">
                         <li class="header-menu-item">
-                            <a class="menu-link" href="#">Студия</a>
+                            <a class="menu-link imhere" href="#">Студия</a>
                         </li>
                         <li class="header-menu-item">
                             <a class="menu-link" href="./portfolio.html">Портфолио</a>
@@ -70,7 +70,7 @@
                 <!-- Шапка -->
                 <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
                 <button 
-                class="button-header" type="button" style="width: 200px; height:50px;">
+                class="button-header" type="button" style="width: 200px; height:50px;" data-modal-open>
                 Заказать услугу
                 </button>
             </div>
@@ -126,13 +126,22 @@
                 <!-- Скорее всего к каждому фото будет ссылка с инфо! -->
                 <ul class="about-inner">
                     <li class="about-list">
-                        <img src="./images/img1.jpg" alt="дизайн для ПК" width="370" height="295"/>
+                        <div class="about-item">
+                            <img src="./images/img1.jpg" alt="Десктопные приложения" width="370" height="295"/>
+                            <span class="about-text">Десктопные приложения</span>
+                        </div>
                     </li>
                     <li class="about-list">
-                        <img src="./images/img2.jpg" alt="дизайн для телефонов" width="370" height="295"/>
+                        <div class="about-item">
+                            <img src="./images/img2.jpg" alt="Мобильные приложения" width="370" height="295"/>
+                            <span class="about-text">Мобильные приложения</span>
+                        </div>
                     </li>
                     <li class="about-list">
-                        <img src="./images/img3.jpg" alt="дизайн для планшетов" width="370" height="295"/>
+                        <div class="about-item">
+                            <img src="./images/img3.jpg" alt="Дизайнерские решения" width="370" height="295"/>
+                            <span class="about-text">Дизайнерские решения</span>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -403,5 +412,17 @@
             </div>
         </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-button" type="button" data-modal-close>
+                
+            </button>
+        </div>
+    </div>
+
+
+    <!--  -->
+    <script src="./js/modal.js"></script>
 </body>
 </html>
