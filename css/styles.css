@@ -622,7 +622,9 @@ address {
 .button-portfolio:focus {
     color: var(--color-accent0);
     background-color: var(--color-link);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Gallery */
@@ -712,13 +714,13 @@ address {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.portfolio-list:hover,
-.portfolio-list:focus {
+.portfolio-card:hover,
+.portfolio-card:focus {
     cursor: pointer;
 }
 
-.portfolio-list:hover .portfolio-overlay,
-.portfolio-list:focus .portfolio-overlay {
+.portfolio-card:hover .portfolio-overlay,
+.portfolio-card:focus .portfolio-overlay {
     transform: translateY(0%); 
 }
 
@@ -730,15 +732,25 @@ address {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+     
+}  
 
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    
 }
 
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.2);
+}
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
     background-color: var(--color-accent0);
@@ -747,9 +759,12 @@ address {
         0px 1px 1px rgba(0, 0, 0, 0.14), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    
+    transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+    
+} 
+ 
 .modal-close-button {
     position: absolute;
     top: 8px;
@@ -771,8 +786,3 @@ address {
     fill: var(--color-accent1);
 }
 
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
