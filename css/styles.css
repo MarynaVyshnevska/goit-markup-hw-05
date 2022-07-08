@@ -108,6 +108,11 @@ header {
     color: var(--color-accent1);
     text-decoration: none;
     letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .logo-white {
     color: var(--color-accent0);
@@ -167,6 +172,11 @@ header {
     color: var(--color-accent2);
     text-decoration: none;
     letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .adr-icon {
@@ -175,6 +185,10 @@ header {
     height: 16px;
     fill: var(--color-accent2);
     margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -227,6 +241,11 @@ section {
     line-height: 1.88;
     letter-spacing: 0.06em;
     margin-top: 30px;
+    box-shadow: none;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        
     
 }
@@ -420,6 +439,9 @@ section {
     height: 20px;
     fill: var(--color-clients);
     
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -434,6 +456,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-item {
     
@@ -468,6 +494,10 @@ section {
     width: 106px;
     height: 60px;
     fill: var(--color-clients);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-web {
@@ -479,11 +509,16 @@ section {
     justify-content: center;
     border-radius: 4px;
     border: 1px solid var(--color-clients);
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-web:hover,
 .client-web:focus {
     cursor: pointer;
+    border: 1px solid var(--color-link);
 }
 
 .client-web:hover .client-icon,
@@ -515,9 +550,18 @@ address {
 }
 .address-text {
    color: var(--color-accent0);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .address-link {
     color: var(--color-accent3);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .First-head, 
@@ -563,6 +607,10 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .come-on-box {
@@ -616,6 +664,11 @@ address {
     background-color: var(--color-back-button);
     border: 1px solid transparent;
     border-radius: 4px;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .button-portfolio:hover,
@@ -625,6 +678,7 @@ address {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
                 0px 1px 2px rgba(0, 0, 0, 0.08), 
                 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 
 /* Gallery */
@@ -638,7 +692,9 @@ address {
     margin-right: 30px;
     margin-bottom: 30px;
     
-    
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list:hover,
